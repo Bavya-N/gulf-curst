@@ -313,7 +313,7 @@ body {
   /* blue */
 }
 
-@media only screen and(min-width:767px) and (max-width: 991px) {
+@media only screen and(min-width:767px) and (max-width: 1026px) {
   .carousel-caption {
     bottom: 125px;
   }
@@ -328,7 +328,7 @@ body {
 }
 /* ... your existing styles ... */
 
-@media only screen and (min-width: 320px) and (max-width: 375px) {
+@media only screen and (min-width: 320px) and (max-width: 376px) {
     .span{
         font-size: 50px;
     }

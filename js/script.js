@@ -8,27 +8,20 @@ document.addEventListener("scroll", () => {
     }
 });
 
-//--------------------- Logo--------------------//
-
-
 //---------------------ToggleBar-----------------------------//
 const navLinks = document.querySelectorAll('.navbar-nav a');
 navLinks.forEach((link) => {
     link.addEventListener('click', () => {
         const navMenu = document.querySelector('.navbar-collapse');
-        if (navMenu.classList.contains('show')) {
-            // Close the collapsed menu
+        if (navMenu.classList.contains('show'))
+         {
             navMenu.classList.remove('show');
         }
     });
 });
 // -----------------------SLIDER------------------------------//
-//---------- slider-Preview----------//
 
-
-//---------- slider-image-button-1----------//
-
-
+            //---------- slider-image-button-1----------//
 function changeBorderColor() {
     var button = document.getElementById('hoverButton');
     button.style.border = '2px solid #17a2b8';
@@ -109,17 +102,15 @@ team.addEventListener("mouseout", () => {
     team.style.transform = ""
 })
 
-
-
-
 // -----------------------SERVICES------------------------------//
+
 document.getElementById("services").style.borderColor = "1px solid #17a2b8";
 document.getElementById("services").style.paddingTop = "50px";
 //-------------icon----------//
 var icon = document.getElementById("prj1");
 var rotation = 0;
 function rotateIcon() {
-    rotation++; // Increment rotation angle
+    rotation++; 
     icon.style.transform = "rotate(" + rotation + "deg)";
 }
 setInterval(rotateIcon, 5);
@@ -127,7 +118,7 @@ setInterval(rotateIcon, 5);
 var icon1 = document.getElementById("prj2");
 var rotation1 = 0;
 function reModeling() {
-    rotation1++; // Increment rotation angle
+    rotation1++; 
     icon1.style.transform = "rotate(" + rotation1 + "deg)";
 }
 setInterval(reModeling, 5);
@@ -149,7 +140,9 @@ function reTeam() {
     icon3.style.transform = "rotate(" + rotation3 + "deg)";
 }
 setInterval(reTeam, 5)
+
 // -----------------------PROJECTS------------------------------//
+
 const first = document.getElementById("first");
 first.addEventListener("mouseover", () => {
     first.style.transform = "scale(1.2)";
@@ -233,14 +226,6 @@ setTimeout(startMarquee, 10000);
 
 // --------------------------Testi------------------------------//
 
-function openPopup() {
-    document.getElementById('popup').style.display = 'block';
-  }
-
-  // Function to close the popup
-  function closePopup() {
-    document.getElementById('popup').style.display = 'none';
-  }
 // -----------------------CONTACT US------------------------------//
 
 
@@ -264,7 +249,7 @@ function validateForm() {
             document.getElementById('nameErr').innerHTML = "Please enter a valid name";
             nameErr = true;
         } else {
-            nameField.style.borderColor = 'green'; // Set border color to green
+            nameField.style.borderColor = 'green'; 
             document.getElementById('nameErr').innerHTML = "";
         }
     }
@@ -282,7 +267,7 @@ function validateForm() {
             document.getElementById('emailErr').innerHTML = "Please enter a valid email address";
             emailErr = true;
         } else {
-            emailField.style.borderColor = 'green'; // Set border color to green
+            emailField.style.borderColor = 'green'; 
             document.getElementById('emailErr').innerHTML = "";
         }
     }
@@ -300,22 +285,20 @@ function validateForm() {
             document.getElementById('phoneErr').innerHTML = "Please enter a valid 10 digit phone number";
             phoneErr = true;
         } else {
-            phoneField.style.borderColor = 'green'; // Set border color to green
+            phoneField.style.borderColor = 'green'; 
             document.getElementById('phoneErr').innerHTML = "";
         }
     }
-    // Prevent the form from being submitted if there are any errors
     if (nameErr || emailErr || phoneErr) {
         return false;
     } else {
-        // Creating a string from input data for preview
         let dataPreview = "You've entered the following details:\n" +
             "Full Name: " + name + "\n" +
             "Email Address: " + email + "\n" +
             "Phone Number: " + phone + "\n";
 
         alert(dataPreview);
-        return true; // Allow form submission
+        return true; 
     }
 }
 

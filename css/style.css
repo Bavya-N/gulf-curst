@@ -9,7 +9,7 @@ body {
 }
 
 /* ---------------------------NavBar---------------------------- */
-/* ---------------------Navbar-Logo----------------------- */
+               /* ------------Navbar-Logo----------------- */
 .hidden {
   opacity: 0;
   transition: opacity 2s ease-in-out;
@@ -34,11 +34,9 @@ body {
 
 /* ---------------------Navbar-Logo-End------------------------ */
 .navbar {
-  /* height:5em; */
   background-color: white;
   color: black;
   transition: color 0.4s ease-in-out;
-  /* background: rgba(0, 0, 0, 0.9); */
 }
 
 .navbar.scrolled {
@@ -85,8 +83,7 @@ body {
 .navbar-nav li {
   margin: 5px;
   justify-content: space-between;
-  /* background: rgba(0, 0, 0, 0.7); */
-}
+  }
 
 .navbar-nav a {
   font-size: 15px;
@@ -127,17 +124,14 @@ body {
   .navbar.scrolled .navbar-nav li {
     background: rgba(0, 0, 0, 0.7) !important;
     transition: color 0.4s ease-in-out;
-    /* background:transparent; */
-  }
+    }
 
   .navbar.scrolled .navbar-nav li a {
     font-weight: 500;
     color: #17a2b8;
-    /* background: rgba(0, 0, 0, 0.7); */
-  }
+    }
 
   .navbar-nav {
-    /* background: rgba(0, 0, 0, 0.7); */
     text-align: center;
   }
   .navbar-collapse {
@@ -145,9 +139,7 @@ body {
   }
   .nav-link a:hover {
     background-color: #17a2b8;
-    /* transition: .1s; */
-    /* border-bottom: none; */
-  }
+    }
 
   .navbar-toggler {
     width: 50%;
@@ -163,7 +155,6 @@ body {
   }
 
   .carousel-caption p {
-    /* width: 100%; */
     line-height: 1.6;
     font-size: 12px;
   }
@@ -310,12 +301,12 @@ body {
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
   color: #00a7ff;
-  /* blue */
 }
 
-@media only screen and(min-width:767px) and (max-width: 1026px) {
+@media only screen and(min-width:767px) and (max-width: 1024px) {
   .carousel-caption {
-    bottom: 125px;
+    top:55%;
+    bottom: 120px;
   }
   .carousel-caption h5 {
     font-size: 40px;
@@ -326,7 +317,7 @@ body {
     width: 100%;
   }
 }
-/* ... your existing styles ... */
+
 
 @media only screen and (min-width: 320px) and (max-width: 376px) {
     .span{
@@ -335,25 +326,25 @@ body {
     .carousel-caption {
       top: 50%;
       transform: translateY(-50%);
-      padding-bottom: 10%; /* Adjust the padding as needed */
+      padding-bottom: 10%; 
     }
   
     .carousel-caption h5 {
       font-size: 20px;
-      margin-top: 10px; /* Adjust the margin as needed */
+      margin-top: 10px; 
       font-weight: 500;
     }
   
     .carousel-caption p {
       width: 100%;
       line-height: 1.4;
-      font-size: 12px; /* Adjust the font size as needed */
+      font-size: 12px; 
       margin: auto;
     }
   
     .carousel-caption > button {
-      width: 150px; /* Adjust the button width as needed */
-      font-size: 12px; /* Adjust the font size as needed */
+      width: 150px; 
+      font-size: 12px; 
     }
   }
   
@@ -380,8 +371,7 @@ body {
 }
 #about img {
   margin-top: 25px;
-  /* height: 50vh; */
-}
+  }
 
 #about h2 {
   font-size: 40px;
@@ -405,26 +395,8 @@ body {
   border: 2px solid #17a2b8;
 }
 
-.mission img {
-  z-index: 111;
-  left: 0;
-  border-radius: 10px;
-}
-
-.mission .content {
-  z-index: 222;
-  background: rgba(255, 255, 255, 0);
-  backdrop-filter: blur(20px);
-  padding: 40px;
-  max-width: 4000px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 10px;
-  transform: translate(-80px, 50px);
-}
-
 @media (min-width: 320px) and (max-width: 480px) {
   #about button {
-    /* width: 35%; */
     font-weight: bold;
     margin: 15px;
     padding: 15px;
@@ -440,12 +412,10 @@ body {
 
 .zoom {
   transition: transform 0.2s;
-  /* animation: zoom-in-zoom-out 1s ease infinite; */
 }
 
 .zoom:hover {
   transform: scale(1.2);
-  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 @keyframes zoom-in-zoom-out {
@@ -463,17 +433,6 @@ body {
 }
 
 /* **************************SERVICES************************** */
-#services {
-  background: linear-gradient(
-    -45deg,
-    #17a2b8 0%,
-    #17a2b8 30%,
-    white 30%,
-    white 70%,
-    #17a2b8 70%,
-    #17a2b8 100%
-  );
-}
 
 .section-title h2 {
   font-size: 30px;
@@ -509,7 +468,6 @@ body {
 #services .icon-box p {
   text-align: justify;
   hyphens: auto;
-  /* word-spacing: -0.05em; */
 }
 
 #services .icon-box .icon {
@@ -584,7 +542,6 @@ body {
   margin: 15px;
   padding: 15px;
   border-radius: 15px 50px;
-  /* border: 1px solid #17a2b8; */
   color: white;
 }
 
@@ -608,9 +565,7 @@ body {
 
 #projects .card img:hover {
   border-radius: 15px 50px;
-  /* transform: scale(1.5);
-    transition: 1s; */
-}
+ }
 
 #projects p {
   font-size: 14px;
@@ -619,23 +574,6 @@ body {
 #projects h2 {
   font-size: 40px;
   font-weight: bold;
-}
-
-/* .imf{
-    /* animation : bounce 10s ease-in-out infinite; 
-} */
-@keyframes bounce {
-  0% {
-    transform: translateY(10px);
-  }
-
-  50% {
-    transform: translateY(-30px);
-  }
-
-  100% {
-    transform: translateY(30px);
-  }
 }
 
 /*-------------------- clients---------------------------*/
@@ -653,14 +591,6 @@ body {
 
 .clients img:hover {
   transform: scale(1.15);
-}
-@keyframes scroll {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
 }
 
 @media (max-width: 768px) {
@@ -689,21 +619,7 @@ body {
   }
 }
 
-
-/*--------------------------------------------------------------
-# Testimonials
---------------------------------------------------------------*/
-#popup {
-  display: none;
-  position: absolute;
-  width: 500px;
-  height: 300px;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  padding: 10px;
-}
-
-/* Contact section */
+/*-------------------- Contact section------------------------------ */
 #contact h2 {
   font-size: 40px;
 }
@@ -787,7 +703,6 @@ body {
 .footer h4 {
   position: relative;
   display: inline-block;
-  /* border-bottom: 2px solid white; */
 }
 
 .footer h4::before {
@@ -822,6 +737,3 @@ a {
   color: white;
 }
 
-/* .social-links i:hover {
-  color: #17a2b8;
-} */
